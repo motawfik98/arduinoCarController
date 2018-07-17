@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.motawfik.bluetoothtrial1.DriveManually"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/connectedStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <ImageButton
+        android:id="@+id/bluetoothButton"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:adjustViewBounds="true"
+        android:onClick="goToBluetoothPage"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connectedStatus"
+        app:srcCompat="@mipmap/bluetooth"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <ImageButton
+        android:id="@+id/rotateButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="-10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toRightOf="@+id/leftButton"
+        app:layout_constraintRight_toLeftOf="@+id/rightButton"
+        app:layout_constraintTop_toTopOf="@+id/leftButton"
+        app:srcCompat="@mipmap/rotate"/>
+
+    <ImageButton
+        android:id="@+id/leftButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="-10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toRightOf="@+id/speedDownButton"
+        app:layout_constraintRight_toLeftOf="@+id/rotateButton"
+        app:layout_constraintTop_toTopOf="@+id/speedDownButton"
+        app:srcCompat="@mipmap/left"/>
+
+    <ImageButton
+        android:id="@+id/rightButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="-10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toRightOf="@+id/rotateButton"
+        app:layout_constraintRight_toLeftOf="@+id/speedUpButton"
+        app:layout_constraintTop_toTopOf="@+id/rotateButton"
+        app:srcCompat="@mipmap/right"/>
+
+    <ImageButton
+        android:id="@+id/speedUpButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toRightOf="@+id/rightButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rightButton"
+        app:srcCompat="@mipmap/up"/>
+
+    <ImageButton
+        android:id="@+id/speedDownButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/leftButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606"
+        app:srcCompat="@mipmap/down"/>
+
+    <ImageButton
+        android:id="@+id/forwardButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/rotateButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@mipmap/upwards"/>
+
+    <ImageButton
+        android:id="@+id/backwardButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rotateButton"
+        app:srcCompat="@mipmap/downwards"/>
+
+    <ImageButton
+        android:id="@+id/soundButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@mipmap/sound1"/>
+
+    <ImageButton
+        android:id="@+id/lightButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@mipmap/light"/>
+
+</android.support.constraint.ConstraintLayout>
